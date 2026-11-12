@@ -1,0 +1,125 @@
+
+.plants-page {
+  min-height: 100vh;
+  padding: 32px;
+  background: #f1f5f9;
+  font-family: "Segoe UI", Arial, sans-serif;
+}
+
+.plants-header {
+  margin-bottom: 25px;
+}
+
+.plants-header h1 {
+  color: #1e3a8a;
+  margin-bottom: 6px;
+}
+
+.plants-header p {
+  color: #64748b;
+}
+
+.plants-card {
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  margin-bottom: 25px;
+  box-shadow: 0 4px 14px rgba(15, 23, 42, 0.06);
+}
+
+.plants-card h2 {
+  color: #1e40af;
+  margin-top: 0;
+}
+
+.plants-form-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+  margin-bottom: 20px;
+}
+
+.plants-form-grid label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 7px;
+  color: #334155;
+}
+
+.plants-form-grid input,
+.plants-form-grid select {
+  width: 100%;
+  padding: 11px;
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+}
+
+.plants-card button {
+  background: #1e40af;
+  color: white;
+  padding: 11px 22px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.plants-card button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.plants-table-wrap {
+  overflow-x: auto;
+}
+
+.plants-card table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.plants-card th,
+.plants-card td {
+  padding: 14px;
+  text-align: left;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.plants-card th {
+  background: #1e40af;
+  color: white;
+}
+
+.plants-success {
+  color: #166534;
+}
+
+.plants-error {
+  color: #dc2626;
+}
+
+@media (max-width: 600px) {
+  .plants-page {
+    padding: 16px;
+  }
+
+  .plants-form-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.plants-edit-btn {
+  background-color: #2563eb;
+  color: white;
+  border: none;
+  padding: 7px 16px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.plants-edit-btn:hover {
+  background-color: #1d4ed8;
+}
+
+.plants-cancel-btn {
+  margin-left: 15px !important;
+}

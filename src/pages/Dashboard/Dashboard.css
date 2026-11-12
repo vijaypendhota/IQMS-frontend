@@ -1,0 +1,116 @@
+
+.dashboard-page {
+  min-height: 100vh;
+  background: #f1f5f9;
+  padding: 35px 24px;
+  font-family: "Segoe UI", Arial, sans-serif;
+  box-sizing: border-box;
+}
+
+.dashboard-card {
+  max-width: 1100px;
+  margin: 0 auto;
+  background: white;
+  border-radius: 14px;
+  padding: 32px;
+  box-shadow: 0 5px 20px rgba(15, 23, 42, 0.06);
+}
+
+.dashboard-card h1 {
+  color: #1e3a8a;
+  font-size: 28px;
+  margin: 0 0 12px;
+}
+
+.dashboard-card h2 {
+  color: #334155;
+  font-size: 20px;
+  margin: 0 0 8px;
+}
+
+.dashboard-card > p {
+  color: #64748b;
+  margin-bottom: 25px;
+}
+
+.profile-info {
+  background: #f8fafc;
+  padding: 25px;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  margin-top: 25px;
+  text-align: left;
+}
+
+.profile-info h3 {
+  color: #1e40af;
+  font-size: 20px;
+  margin: 0 0 20px;
+}
+
+.profile-info h4 {
+  color: #1e40af;
+  font-size: 17px;
+  margin: 25px 0 15px;
+}
+
+.profile-info p {
+  margin: 12px 0;
+  font-size: 15px;
+  color: #334155;
+}
+
+.profile-info ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(180px, 1fr)
+  );
+  gap: 10px;
+}
+
+.profile-info li {
+  background: #dbeafe;
+  color: #1e40af;
+  padding: 10px 12px;
+  border-radius: 7px;
+  font-size: 13px;
+  font-weight: 500;
+  overflow-wrap: anywhere;
+}
+
+.dashboard-card > button {
+  background: #dc2626;
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 7px;
+  font-size: 14px;
+  cursor: pointer;
+  margin-top: 25px;
+}
+
+.dashboard-card > button:hover {
+  background: #b91c1c;
+}
+
+@media (max-width: 600px) {
+  .dashboard-page {
+    padding: 15px;
+  }
+
+  .dashboard-card {
+    padding: 20px;
+  }
+
+  .dashboard-card h1 {
+    font-size: 23px;
+  }
+
+  .profile-info {
+    padding: 16px;
+  }
+}

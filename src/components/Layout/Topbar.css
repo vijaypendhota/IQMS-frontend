@@ -1,0 +1,83 @@
+
+
+.iqms-topbar {
+  height: 75px;
+  background: white;
+  border-bottom: 1px solid #e2e8f0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 28px;
+  gap: 20px;
+}
+
+.topbar-title h3 {
+  color: #1e3a8a;
+  font-size: 18px;
+  margin: 0 0 5px;
+}
+
+.topbar-title p {
+  color: #64748b;
+  font-size: 12px;
+  margin: 0;
+}
+
+.topbar-user {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.topbar-user-details {
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+}
+
+.topbar-user-details strong {
+  color: #334155;
+  font-size: 14px;
+}
+
+.topbar-user-details span {
+  color: #64748b;
+  font-size: 12px;
+}
+
+.topbar-user button {
+  background: #dc2626;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 10px 16px;
+  cursor: pointer;
+}
+
+.topbar-user button:hover {
+  background: #b91c1c;
+}
+
+@media (max-width: 700px) {
+  .iqms-topbar {
+    height: auto;
+    padding: 15px;
+    flex-wrap: wrap;
+  }
+}
+
+
+.topbar-change-password {
+  background: #ffffff;
+  color: #1d4ed8;
+  border: 1px solid #bfdbfe;
+  border-radius: 6px;
+  padding: 9px 14px;
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.topbar-change-password:hover {
+  background: #eff6ff;
+}

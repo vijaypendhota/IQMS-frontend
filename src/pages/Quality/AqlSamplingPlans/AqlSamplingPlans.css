@@ -1,0 +1,251 @@
+
+
+.aql-page {
+  padding: 24px;
+  color: #14284a;
+}
+
+.aql-header,
+.aql-toolbar,
+.aql-actions,
+.aql-filters,
+.aql-row-actions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.aql-header {
+  margin-bottom: 20px;
+}
+
+.aql-header h1 {
+  margin: 0 0 6px;
+  font-size: 26px;
+}
+
+.aql-header p {
+  margin: 0;
+  color: #64748b;
+}
+
+.aql-card {
+  background: #fff;
+  border: 1px solid #dce4ef;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 22px;
+}
+
+.aql-card h2 {
+  margin: 0 0 18px;
+  font-size: 19px;
+}
+
+.aql-form-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.aql-form-grid label {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.aql-form-grid input,
+.aql-form-grid select,
+.aql-form-grid textarea,
+.aql-filters input,
+.aql-filters select {
+  width: 100%;
+  box-sizing: border-box;
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+  padding: 11px 12px;
+  font: inherit;
+  background: white;
+  color: #14284a;
+}
+
+.aql-form-grid input:focus,
+.aql-form-grid select:focus,
+.aql-form-grid textarea:focus {
+  outline: 2px solid #93c5fd;
+  border-color: #2563eb;
+}
+
+.aql-form-grid input[readonly] {
+  background: #f1f5f9;
+}
+
+.aql-full-width {
+  grid-column: 1 / -1;
+}
+
+.aql-note {
+  padding: 12px;
+  margin-top: 18px;
+  border: 1px solid #dbe5f1;
+  border-radius: 6px;
+  background: #f8fafc;
+  color: #475569;
+  font-size: 13px;
+}
+
+.aql-actions {
+  justify-content: flex-end;
+  margin-top: 20px;
+}
+
+.aql-primary-btn,
+.aql-secondary-btn,
+.aql-row-actions button {
+  border-radius: 6px;
+  padding: 10px 16px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.aql-primary-btn {
+  border: 1px solid #2563eb;
+  background: #2563eb;
+  color: white;
+}
+
+.aql-secondary-btn,
+.aql-row-actions button {
+  border: 1px solid #cbd5e1;
+  background: white;
+  color: #14284a;
+}
+
+.aql-primary-btn:disabled,
+.aql-secondary-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.aql-success,
+.aql-error {
+  border-radius: 6px;
+  padding: 12px;
+  margin-bottom: 15px;
+}
+
+.aql-success {
+  background: #ecfdf5;
+  color: #166534;
+}
+
+.aql-error {
+  background: #fef2f2;
+  color: #b91c1c;
+}
+
+.aql-toolbar {
+  margin-bottom: 16px;
+}
+
+.aql-filters input {
+  min-width: 200px;
+}
+
+.aql-table-wrap {
+  overflow-x: auto;
+}
+
+.aql-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 13px;
+}
+
+.aql-table th,
+.aql-table td {
+  padding: 12px;
+  border-bottom: 1px solid #e2e8f0;
+  text-align: left;
+  white-space: nowrap;
+}
+
+.aql-table th {
+  background: #f8fafc;
+  font-weight: 700;
+}
+
+.aql-row-actions {
+  justify-content: flex-start;
+}
+
+.aql-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(15, 23, 42, 0.55);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  padding: 20px;
+}
+
+.aql-modal {
+  background: white;
+  border-radius: 10px;
+  padding: 24px;
+  width: min(650px, 100%);
+  max-height: 85vh;
+  overflow-y: auto;
+}
+
+.aql-detail-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.aql-detail-grid div {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.aql-detail-grid span {
+  font-size: 12px;
+  color: #64748b;
+}
+
+.aql-detail-grid strong {
+  font-size: 14px;
+  overflow-wrap: anywhere;
+}
+
+@media (max-width: 768px) {
+  .aql-page {
+    padding: 12px;
+  }
+
+  .aql-header,
+  .aql-toolbar,
+  .aql-filters {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .aql-form-grid,
+  .aql-detail-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .aql-full-width {
+    grid-column: auto;
+  }
+
+  .aql-filters input {
+    min-width: 0;
+  }
+}

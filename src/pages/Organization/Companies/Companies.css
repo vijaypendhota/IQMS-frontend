@@ -1,0 +1,141 @@
+
+.companies-page {
+  min-height: 100vh;
+  padding: 32px;
+  background: #f1f5f9;
+  font-family: "Segoe UI", Arial, sans-serif;
+}
+
+.companies-header {
+  margin-bottom: 25px;
+}
+
+.companies-header h1 {
+  color: #1e3a8a;
+  margin-bottom: 6px;
+}
+
+.companies-header p {
+  color: #64748b;
+}
+
+.companies-form-card,
+.companies-list-card {
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  margin-bottom: 25px;
+  box-shadow: 0 4px 14px rgba(15, 23, 42, 0.06);
+}
+
+.companies-form-card h2,
+.companies-list-card h2 {
+  color: #1e40af;
+  margin-top: 0;
+}
+
+.companies-form-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+  margin-bottom: 20px;
+}
+
+.companies-form-grid label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 7px;
+  color: #334155;
+}
+
+.companies-form-grid input,
+.companies-form-grid select {
+  width: 100%;
+  padding: 11px;
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+}
+
+.companies-full-width {
+  grid-column: 1 / -1;
+}
+
+.companies-form-card button {
+  background: #1e40af;
+  color: white;
+  padding: 11px 22px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.companies-form-card button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.companies-table-wrap {
+  overflow-x: auto;
+}
+
+.companies-list-card table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.companies-list-card th,
+.companies-list-card td {
+  text-align: left;
+  padding: 14px;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.companies-list-card th {
+  background: #1e40af;
+  color: white;
+}
+
+.companies-success {
+  color: #166534;
+}
+
+.companies-error {
+  color: #dc2626;
+}
+
+@media (max-width: 600px) {
+  .companies-page {
+    padding: 16px;
+  }
+
+  .companies-form-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.companies-edit-btn {
+  background-color: #2563eb;
+  color: white;
+  border: none;
+  padding: 7px 16px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.companies-edit-btn:hover {
+  background-color: #1d4ed8;
+}
+
+.companies-cancel-btn {
+  background-color: #64748b;
+  color: white;
+  border: none;
+  padding: 9px 16px;
+  border-radius: 5px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.companies-cancel-btn:hover {
+  background-color: #475569;
+}

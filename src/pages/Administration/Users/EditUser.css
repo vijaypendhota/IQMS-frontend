@@ -1,0 +1,66 @@
+
+
+.edit-user-page {
+  min-height: 100vh;
+  background: #f1f5f9;
+  padding: 35px;
+  font-family: Arial, sans-serif;
+}
+
+.edit-user-form {
+  max-width: 600px;
+  margin: auto;
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+.edit-user-form h2 {
+  color: #1e3a8a;
+  margin-bottom: 25px;
+}
+
+.edit-user-form label {
+  display: block;
+  margin: 15px 0 7px;
+  font-weight: 600;
+}
+
+.edit-user-form input,
+.edit-user-form select {
+  width: 100%;
+  padding: 11px;
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+  box-sizing: border-box;
+}
+
+.edit-user-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+  margin-top: 25px;
+}
+
+.edit-user-actions button {
+  padding: 11px 18px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.edit-user-actions button:last-child {
+  background: #1e40af;
+  color: white;
+}
+
+.edit-user-actions button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.edit-user-error {
+  color: #dc2626;
+  margin-bottom: 15px;
+}
